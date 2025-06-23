@@ -63,3 +63,64 @@ whyCards.forEach(card => {
 
 // Insert all cards into the container
 container.appendChild(cardsWrapper);
+
+
+// Special Offers section
+
+const specialOffers = [
+  {
+    image: 'assets/images/hotel1.png',
+    title: 'Wilderness Club at Big <br>Ceddar',
+    date: '28 October — 1 November',
+    price: '$2016',
+    per: '/6 night',
+    ratingImage: 'assets/icons/rating.png', 
+    favoriteIcon: 'assets/icons/favorite.png'
+  },
+  {
+    image: 'assets/images/hotel2.png',
+    title: 'Wilderness Club at Big <br>Ceddar',
+    date: '28 October — 1 November',
+    price: '$2016',
+    per: '/6 night',
+    ratingImage: 'assets/icons/rating.png',
+    favoriteIcon: 'assets/icons/favorite.png'
+  },
+  {
+    image: 'assets/images/hotel3.png',
+    title: 'Wilderness Club at Big <br>Ceddar',
+    date: '28 October — 1 November',
+    price: '$2016',
+    per: '/6 night',
+    ratingImage: 'assets/icons/rating.png',
+    favoriteIcon: 'assets/icons/favorite.png'
+  }
+];
+
+const offersContainer = document.getElementById('special-offers-container');
+
+const offersWrapper = document.createElement('div');
+offersWrapper.classList.add('offers-wrapper');
+
+specialOffers.forEach(offer => {
+  const offerCard = document.createElement('div');
+  offerCard.classList.add('offer-card');
+
+  offerCard.innerHTML = `
+    <div class="image-wrapper">
+      <img class="hotel-image" src="${offer.image}" alt="${offer.title}">
+      <img class="rating-icon" src="${offer.ratingImage}" alt="Rating">
+      <img class="favorite-icon" src="${offer.favoriteIcon}" alt="Favorite">
+    </div>
+    <div class="offer-info">
+      <h3>${offer.title}</h3>
+      <p class="date">${offer.date}</p>
+      <p class="price">${offer.price} <span class="per">${offer.per}</span></p>
+    </div>
+  `;
+
+  offersWrapper.appendChild(offerCard);
+});
+
+offersContainer.appendChild(offersWrapper);
+
