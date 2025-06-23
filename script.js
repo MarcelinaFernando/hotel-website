@@ -124,3 +124,56 @@ specialOffers.forEach(offer => {
 
 offersContainer.appendChild(offersWrapper);
 
+
+// Testimonials section
+
+const testimonials = [
+  {
+    image: 'assets/images/client1.png',
+    text: `I quickly found the right tour for me, but I had a few questions about the hotel, 
+    I wrote to tech support and they answered all my questions within an hour. 
+    The vacation itself was perfect. Thank you very much. I will come back again and again.`,
+    name: 'Jannike Borg',
+    profession: 'Publisher'
+  },
+  {
+    image: 'assets/images/client2.png',
+    text: `I quickly found the right tour for me, but I had a few questions about the hotel, 
+    I wrote to tech support and they answered all my questions within an hour. 
+    The vacation itself was perfect. Thank you very much. I will come back again and again.`,
+    name: 'LeBron Durant',
+    profession: 'Flight attendant'
+  },
+  {
+    image: 'assets/images/client3.png',
+    text: `I quickly found the right tour for me, but I had a few questions about the hotel, 
+    I wrote to tech support and they answered all my questions within an hour. 
+    The vacation itself was perfect. Thank you very much. I will come back again and again.`,
+    name: 'Kaarel Piho',
+    profession: 'Chiropodist'
+  }
+];
+
+const testimonialsContainer = document.getElementById('testimonials-container');
+
+testimonials.forEach(testimonial => {
+  const card = document.createElement('div');
+  card.classList.add('testimonial-card');
+
+  card.innerHTML = `
+    <img src="${testimonial.image}" alt="${testimonial.name}" class="testimonial-img">
+    <p class="testimonial-text">${testimonial.text}</p>
+    <p class="testimonial-author"><strong>${testimonial.name}</strong>, <em>${testimonial.profession}</em></p>
+  `;
+
+  testimonialsContainer.appendChild(card);
+});
+
+// Add an image to the "More Reviews" button
+const moreReviewsImg = document.createElement('div');
+moreReviewsImg.classList.add('more-reviews-image');
+moreReviewsImg.innerHTML = `
+  <img src="assets/images/more-reviews.png" alt="More Reviews">
+`;
+
+testimonialsContainer.appendChild(moreReviewsImg);
