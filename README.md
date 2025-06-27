@@ -16,7 +16,7 @@ All repeated content was dynamically rendered with JavaScript, while the interfa
 
 ## 🔗 Live Preview
 
-👉 [Click here to view the website](https://seu-link-do-render.com)
+👉 [Click here to view the website](https://hotel-website-bqyj.onrender.com)
 
 ---
 
