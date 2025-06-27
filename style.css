@@ -113,7 +113,7 @@
 /* Styles for the hero section */
 
 .hero {
-  background-image: url('assets/images/Rectangle.png'); 
+  background-image: url('assets/images/Rectangle\ .png'); 
   background-size: cover;
   background-position: center;
   padding: 1.5rem 1.5rem;
@@ -520,5 +520,8 @@
 }
 .credits-blue{
   color: #2A90D9;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: bold;
 }
 
