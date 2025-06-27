@@ -177,3 +177,59 @@ moreReviewsImg.innerHTML = `
 `;
 
 testimonialsContainer.appendChild(moreReviewsImg);
+
+
+// Recent Posts section
+
+// List of posts
+const posts = [
+  {
+    image: 'assets/images/athens.png',
+    date: 'May 23, 2022',
+    time: '5 minutes',
+    title: 'My trip to Athens',
+    description: `It would seem that in a city where Theseus, Plato and Epicurus once walked, 
+    the very idea of the subway is alien to the city, but already...`
+  },
+  {
+    image: 'assets/images/vilnius.png',
+    date: 'May 22, 2022',
+    time: '1 minute',
+    title: 'Vilnius resorts',
+    description: `I haven't seen any resorts in Vilnius, but there are wonderful people and pubs`
+  },
+  {
+    image: 'assets/images/plane.png',
+    date: 'May 20, 2022',
+    time: '15 minutes',
+    title: 'Tips for flying on a plane',
+    description: `If you have a fear of flying, here’s a helpful tip: bring your co-pilot so you 
+    can take a nap while he steers the plane for you`
+  }
+];
+
+// Container of the section
+const postsContainer = document.getElementById('recent-posts-container');
+
+// Generate the posts dynamically
+posts.forEach(post => {
+  const postCard = document.createElement('div');
+  postCard.classList.add('post-card');
+
+  postCard.innerHTML = `
+    <img src="${post.image}" alt="${post.title}" class="post-img">
+    <div class="post-info">
+      <div class="post-meta">
+        <span class="post-date">${post.date}</span>
+        <span class="post-time">
+          <img src="assets/icons/clock.png" alt="clock icon" class="clock-icon">
+          ${post.time}
+        </span>
+      </div>
+      <h3 class="post-title">${post.title}</h3>
+      <p class="post-desc">${post.description}</p>
+    </div>
+  `;
+
+  postsContainer.appendChild(postCard);
+});
