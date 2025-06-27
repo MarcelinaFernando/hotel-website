@@ -413,3 +413,112 @@
   font-family: 'Montserrat', sans-serif;
   color: #262729;
 }
+
+
+/* Styles for the footer */
+
+.footer {
+  background-color: #F3F2F0;
+  padding: 2rem 1rem;
+}
+
+.footer-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer-column h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: #262729;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 2rem;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: #262729;
+}
+
+.newsletter {
+  padding: 1rem 0 2rem 0;
+}
+
+.newsletter h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: #262729;
+  margin-bottom: 1rem;
+}
+
+.newsletter label {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: #262729;
+}
+.newsletter-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-top: 0.5rem;
+}
+
+.email-img {
+  max-width: 90%;
+  display: block;
+}
+
+.send-img {
+  display: block;
+  margin-left: -7px;
+}
+
+.footer-separator {
+  height: 1px;
+  width: 100%;
+  background-color: #999999;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.footer-bottom { 
+  text-align: left;
+}
+
+.footer-bottom .logo { 
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+  padding: 0 5rem;
+}
+.footer-credit {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: #262729;
+  margin-top: 1rem;
+}
+.credits-blue{
+  color: #2A90D9;
+}
+
