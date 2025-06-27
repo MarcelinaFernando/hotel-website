@@ -3,6 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Formatação dos h2 gerais do site */
+.section-header h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: #262729;
+  text-align: center;
+}
 
 /* Top of the website styles */
 .head_mobile {
@@ -160,11 +168,7 @@
 }
 
 .section-header h2 {
-  font-size: 1.75rem;
-  font-weight: 600;
   margin-bottom: 0.5rem;
-  font-family: 'Montserrat', sans-serif;
-  color: #262729;
 }
 
 .section-header p {
@@ -210,10 +214,6 @@
 
 /* Title of the section */
 .special-offers-section h2 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color:262729;
-  text-align: center;
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
@@ -305,7 +305,6 @@
   align-items: center;
   gap: 2rem;
 }
-
 .testimonial-card {
   max-width: 330px;
   background-color: #ffffff;
@@ -348,12 +347,6 @@
 .recent-posts-section .section-header {
   text-align: center;
   margin-bottom: 3rem;
-}
-.recent-posts-section h2 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: #262729;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .post-card {
