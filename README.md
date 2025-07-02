@@ -22,7 +22,7 @@ All repeated content was dynamically rendered with JavaScript, while the interfa
 
 ## 🎥 Walkthrough Video
 
-🎬 [Watch the video on Loom](https://seu-link-do-loom.com)
+🎬 [Watch the video on Loom](https://www.loom.com/share/672431d3cc0f489e83ffac13c5fe02dd?sid=95f69c60-0d30-4980-b4a8-5934413aae0b)
 
 ---
 
