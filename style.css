@@ -1,0 +1,520 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Formatação dos h2 gerais do site */
+.section-header h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: #262729;
+  text-align: center;
+}
+
+/* Top of the website styles */
+.head_mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  1rem;
+  background-color: #ffffff;
+  width: 100%;
+}
+.mobile-menu {
+  background: none;
+  border: none;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: -5rem;
+
+}
+/* Logo colors */
+.logo-blue {
+  color: #2A90D9;
+}
+
+.logo-red {
+  color: #EE685F;
+}
+
+/* Styles for the mobile menu */
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  transition: left 0.3s ease-in-out;
+}
+.mobile-nav.open {
+  left: 0; 
+}
+.mobile-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.close-menu {
+  background: none;
+  border: none;
+}
+
+/* Styles for the navigation links */
+.mobile-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-nav-links a {
+  text-decoration: none;
+  color: #1A1A1A;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+.currency-language {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 12rem;
+  gap: 1rem;
+}
+
+/* Menu adjustments for small screens */
+
+@media (max-width: 768px) {
+  .head_mobile {
+    padding: 1rem;
+    position: relative;
+    z-index: 1100;
+  }
+  .mobile-nav {
+    width: 100%;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    margin-top: auto;
+  }
+}
+
+/* Styles for the hero section */
+
+.hero {
+  background-image: url('assets/images/Rectangle\ .png'); 
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem 1.5rem;
+  color: #262729;
+  text-align: left;
+}
+
+.hero-content {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.search-bar-img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+}
+
+/* Styles for the Why Choose Us section */
+.why-choose-us-section {
+  background-color: #f7f7f7;
+  padding: 3rem 1rem;
+}
+
+/* Header of the section */
+.section-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Styles for the cards */
+.why-card {
+  padding: 1rem;
+  text-align: center;
+}
+
+.why-card img {
+  margin-bottom: 0.5rem;
+}
+
+.why-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #262729;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.why-card p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #262729;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+}
+
+/* Styles for the Special Offers section */
+
+.special-offers-section {
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+}
+
+/* Title of the section */
+.special-offers-section h2 {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+/* Wrapper for all cards */
+.offers-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Individual card */
+
+.offer-card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid #E7E6EB;
+  padding: 0.5rem 0.5rem;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  
+}
+.hotel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Review icon (star + rating) */
+.rating-icon {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 40px;
+}
+
+/* Favorite icon */
+.favorite-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+}
+
+/* Card information */
+.offer-info {
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.offer-info h3 {
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: #262729;
+  margin-bottom: 0.25rem;
+}
+
+.offer-info .date {
+  font-size: 1.125rem;
+  color: #262729;
+    font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.offer-info .price {
+  font-size: 1.875rem;
+  font-weight: 500;
+  color: #2A90D9;
+}
+
+.offer-info .per {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #2A90D9;
+  margin-left: 4px;
+}
+
+/* Styles for the testimonials section */
+.testimonials-section {
+  padding: 2rem 1rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.testimonial-card {
+  max-width: 330px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.testimonial-img {
+  width:  4.375rem;
+  height:  4.375rem;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #262729;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0.75rem;
+}
+
+.testimonial-author {
+  font-size: 0.875rem;
+  color: #262729;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.more-reviews-image {
+  margin-top: 1rem;
+}
+
+
+/* Styles for the Recent Posts section */
+
+.recent-posts-section {
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+}
+.recent-posts-section .section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.post-card {
+  margin-bottom: 1.5rem;
+}
+
+.post-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.post-info {
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.post-date {
+  font-family: 'Montserrat', sans-serif;
+  color: #262729;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.post-time {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #2A90D9;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.clock-icon {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.post-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+  color: #262729;
+}
+
+.post-desc {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: #262729;
+}
+
+
+/* Styles for the footer */
+
+.footer {
+  background-color: #F3F2F0;
+  padding: 2rem 1rem;
+}
+
+.footer-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer-column h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: #262729;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 2rem;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: #262729;
+}
+
+.newsletter {
+  padding: 1rem 0 2rem 0;
+}
+
+.newsletter h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: #262729;
+  margin-bottom: 1rem;
+}
+
+.newsletter label {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: #262729;
+}
+.newsletter-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-top: 0.5rem;
+}
+
+.email-img {
+  max-width: 90%;
+  display: block;
+}
+
+.send-img {
+  display: block;
+  margin-left: -7px;
+}
+
+.footer-separator {
+  height: 1px;
+  width: 100%;
+  background-color: #999999;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.footer-bottom { 
+  text-align: left;
+}
+
+.footer-bottom .logo { 
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+  padding: 0 5rem;
+}
+.footer-credit {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: #262729;
+  margin-top: 1rem;
+}
+.credits-blue{
+  color: #2A90D9;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: bold;
+}
+
